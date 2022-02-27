@@ -1,0 +1,51 @@
+// variables
+$darkGrey : #1c1e24;
+$lighterGrey: #23272C;
+$reactBlue: #71CEED;
+
+body {
+    margin: 0;
+    font-family: 'Inter';
+    background-color: $lighterGrey;
+}
+
+.nav {
+    display: flex;
+    gap: 0.5rem;
+    background-color: $darkGrey;
+
+    .nav-logo {
+        height: 2rem;
+        margin: auto 0 auto 2rem;
+    }
+
+    h3 {
+        color: $reactBlue;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    
+    h4 {
+        margin:  auto 2rem auto auto;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    color: #FFFFFF;
+    ul {
+        li::marker {
+            color: $reactBlue;
+            font-size: 1.5rem;
+        }
+    }
+
+    background-size: 150px auto;
+    background-image: url(./images/logo512.png);
+    background-repeat: no-repeat;
+    background-position: 115% 75%;
+}
